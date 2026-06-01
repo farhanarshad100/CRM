@@ -13,7 +13,7 @@ export default function SignupForm() {
       <TextField label="Email" />
       <TextField label="Password" type="password" />
 
-      <Button variant="contained" onClick={handleSignup}>
+      <Button variant="contained" onClick={handleSignup} sx={{background:"#4d397b", padding:"10px 20px"}} >
         Sign Up
       </Button>
     </Box>

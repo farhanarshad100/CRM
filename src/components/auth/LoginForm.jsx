@@ -19,7 +19,7 @@ const handleLogin = () => {
   return (
     <Box
       sx={{
-        width: 350,
+        width: "100%",
         display: "flex",
         flexDirection: "column",
         gap: 2,
@@ -31,6 +31,7 @@ const handleLogin = () => {
       <Button
         variant="contained"
         onClick={handleLogin}
+        sx={{background:"#4d397b", padding:"10px 20px"}}
       >
         Login
       </Button>

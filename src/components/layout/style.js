@@ -28,6 +28,27 @@ searchBar:{
  boxShadow:"none"
     }
     }
-}
+},
+sideNav: {
+  "& ul li": {
+    color: "#3a3a3a",
+  },
+  "& ul li a": {
+
+    padding:"8px 20px",
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+  },
+
+  "& ul li.active": {
+    backgroundColor: "#004cca",
+    color:"#fff",
+  },
+  "& .css-1b50ykj-MuiTypography-root":{
+    fontSize:"14px",
+    fontWeight:"500"
+  }
+},
 }
 export default style

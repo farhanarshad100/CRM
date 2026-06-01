@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <Box sx={styles.wrapper}>
-      {/* 🌈 Animated Background */}
+    
       <Box sx={styles.bg} />
 
       <Box sx={styles.blob1} />
@@ -19,10 +19,11 @@ export default function Home() {
       <Box sx={styles.blob3} />
 
       {/* 💎 Auth Card */}
+        <Typography variant="h1" sx={{fontSize:"40px", color:"#fff", fontWeight:"600", marginBottom:"30px"}}>Logo</Typography>
       <Card sx={styles.card}>
         <CardContent sx={styles.content}>
-          
-          <Typography variant="h4" fontWeight="bold">
+          <Box sx={{marginBottom:"20px"}}>
+          <Typography variant="h1" sx={{fontWeight:"600", fontSize:"30px"}}>
             {isSignup ? "Create Account" : "Welcome Back"}
           </Typography>
 
@@ -31,14 +32,14 @@ export default function Home() {
               ? "Start your journey with us today"
               : "Login to continue to your dashboard"}
           </Typography>
-
+</Box>
           {/* Forms */}
           <Box sx={{ width: "100%" }}>
             {isSignup ? <SignupForm /> : <LoginForm />}
           </Box>
 
           {/* Toggle Button */}
-          <Button onClick={() => setIsSignup(!isSignup)} sx={styles.button}>
+          <Button onClick={() => setIsSignup(!isSignup)} sx={styles.button} >
             {isSignup ? "Already have an account? Login" : "Create new account"}
           </Button>
 
@@ -58,6 +59,7 @@ const styles = {
     alignItems: "center",
     overflow: "hidden",
     background: "#050816",
+    flexDirection:"column"
   },
 
   /* subtle animated gradient layer */
@@ -73,10 +75,10 @@ const styles = {
   card: {
     width: 420,
     zIndex: 10,
-    borderRadius: 5,
-    p: 1,
+    borderRadius: 3,
+    p: 2,
     backdropFilter: "blur(18px)",
-    background: "rgba(255,255,255,0.08)",
+    background: "rgb(255, 255, 255)",
     border: "1px solid rgba(255,255,255,0.15)",
     boxShadow: "0 25px 80px rgba(0,0,0,0.6)",
   },
@@ -84,23 +86,18 @@ const styles = {
   content: {
     display: "flex",
     flexDirection: "column",
-    gap: 2,
-    color: "#fff",
+    gap: 1,
+    color: "#361f5b",
+    textAlign:"center",
   },
 
   button: {
     mt: 1,
     py: 1.2,
-    borderRadius: 3,
-    fontWeight: "bold",
     color: "#fff",
     textTransform: "none",
-    background: "linear-gradient(90deg,#4facfe,#00f2fe)",
+    background: "#455376",
     transition: "0.3s",
-    "&:hover": {
-      transform: "scale(1.03)",
-      opacity: 0.9,
-    },
   },
 
   /* blobs */

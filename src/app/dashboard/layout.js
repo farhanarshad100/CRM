@@ -25,7 +25,7 @@ export default function DashboardLayout({ children }) {
       <Box sx={{ display: "flex" }}>
         <Sidebar />
 
-        <Box sx={{ flexGrow: 1, p: 3,  ml: "260px", }}>
+        <Box sx={{ flexGrow: 1, p: 3,  }}>
           {children}
         </Box>
       </Box>
