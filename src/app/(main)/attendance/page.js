@@ -1,12 +1,10 @@
-import DashboardLeft from '@/components/dashboardSection/dashboardLeft'
-import DashboardRight from '@/components/dashboardSection/dashboardRight'
-import { Box } from '@mui/material'
+import AttendanceSection from '@/components/attendanceSection'
 import React from 'react'
 
 const Attendance = () => {
   return (
 <>
-<h1>Attendance Log</h1>
+<AttendanceSection/>
 </>
   )
 }
