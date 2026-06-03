@@ -4,11 +4,10 @@ import { Box, colors, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import Button from "../ui/Button";
 
-
 const CompanyInfo = () => {
   return (
     <Box sx={style.companyInfo}>
-      <Grid container spacing={5} sx={{alignItems:"center"}}>
+      <Grid container spacing={5} sx={{ alignItems: "center" }}>
         <Grid size={2}>
           <Box sx={style.innerLogo}>
             <Image
@@ -49,41 +48,49 @@ const CompanyInfo = () => {
                   Information Technology (IT)
                 </Typography>
               </Box>
-      
             </Box>
-                    <Box sx={{display:"flex", gap:"12px", mt:3}}>
-                        <Button   sx={{
-    background: "#D6E4F9",
-    fontSize: "11px",
-    padding: "6px 16px",
-    fontWeight:"700",
-    color:"#0F1C2C",
-    letterSpacing:"1.1px"
-  }}>HQ: BANGALORE, INDIA</Button>
-                    <Button   sx={{
-    background: "#D6E4F9",
-    fontSize: "11px",
-    padding: "6px 16px",
-    fontWeight:"700",
-    color:"#0F1C2C",
-    letterSpacing:"1.1px"
-  }}>GROWTH STAGE</Button>
-  
-
-              </Box>
+            <Box sx={{ display: "flex", gap: "12px", mt: 3 }}>
+              <Button
+                sx={{
+                  background: "#D6E4F9",
+                  fontSize: "11px",
+                  padding: "6px 16px",
+                  fontWeight: "700",
+                  color: "#0F1C2C",
+                  letterSpacing: "1.1px",
+                }}
+              >
+                HQ: BANGALORE, INDIA
+              </Button>
+              <Button
+                sx={{
+                  background: "#D6E4F9",
+                  fontSize: "11px",
+                  padding: "6px 16px",
+                  fontWeight: "700",
+                  color: "#0F1C2C",
+                  letterSpacing: "1.1px",
+                }}
+              >
+                GROWTH STAGE
+              </Button>
+            </Box>
           </Box>
         </Grid>
         <Grid size={2}>
-            <Button   sx={{
-    background: "#004CCA",
-    fontSize: "14px",
-    padding: "12px 30px",
-    fontWeight:"700",
-    color:"#fff",
-    letterSpacing:"1.1px",
-    width:"100%",
-  }}>Edit
-Profile</Button>
+          <Button
+            sx={{
+              background: "#004CCA",
+              fontSize: "14px",
+              padding: "12px 30px",
+              fontWeight: "700",
+              color: "#fff",
+              letterSpacing: "1.1px",
+              width: "100%",
+            }}
+          >
+            Edit Profile
+          </Button>
         </Grid>
       </Grid>
     </Box>

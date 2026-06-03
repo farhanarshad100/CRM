@@ -16,20 +16,20 @@ export default function Navbar() {
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Box sx={{display:"flex", alignItems:"center", gap:"20px"}}>
-        <Box>  <Image
-          src="/images/logo.svg"
-          alt="Search"
-          width={40}
-          height={40}
-          style={{display:"block"}}
-        /> </Box>
-        <Typography
-          sx={{ fontSize: "20px", color: "#004cca", fontWeight: "bold" }}
-        >
-          Precision Corp
-        </Typography>
-</Box>
+        <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          <Box>  <Image
+            src="/images/logo.svg"
+            alt="Search"
+            width={40}
+            height={40}
+            style={{ display: "block" }}
+          /> </Box>
+          <Typography
+            sx={{ fontSize: "20px", color: "#004cca", fontWeight: "bold" }}
+          >
+            Precision Corp
+          </Typography>
+        </Box>
         <Box sx={style.searchBar}>
           <input type="text" placeholder="Search" />
           <span>

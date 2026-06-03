@@ -146,31 +146,31 @@ const style = {
       fontWeight: "800",
     },
   },
-  locationInfo:{
-    padding:"120px",
-    "& h6":{
-      fontSize:"20px",
-      color:"#0F172A",
-      fontWeight:"800",
+  locationInfo: {
+    padding: "120px",
+    "& h6": {
+      fontSize: "20px",
+      color: "#0F172A",
+      fontWeight: "800",
     },
-    "& p":{
-      fontSize:"16px",
-      fontWeight:"500",
-      color:"#64748B"
-    }
+    "& p": {
+      fontSize: "16px",
+      fontWeight: "500",
+      color: "#64748B",
+    },
   },
-  locationIcon:{
+  locationIcon: {
     display: "flex",
-justifyContent: "center",
-alignItems: "center",
-padding: "0px",
-width: "56px",
-height: "56px",
-background: "#EFF6FF",
-boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.05)",
-borderRadius: "16px",
-marginBottom:"24px",
-  }
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "0px",
+    width: "56px",
+    height: "56px",
+    background: "#EFF6FF",
+    boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.05)",
+    borderRadius: "16px",
+    marginBottom: "24px",
+  },
 };
 
 export default style;
