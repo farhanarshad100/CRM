@@ -6,7 +6,7 @@ import Image from 'next/image'
 const MonthlyEfficiency = () => {
   return (
 <Box sx={style.monthlyEfficiency}>
- <Grid container spacing={3} alignItems="stretch">
+ <Grid container spacing={3}>
     <Grid size={8} >
     <Box sx={style.monthlyEfficiencyInner}>
         <Typography variant='h4'>Monthly Efficiency Recap</Typography>

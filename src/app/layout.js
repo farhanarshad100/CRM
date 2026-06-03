@@ -1,12 +1,19 @@
 import "./globals.css";
+import { Inter } from "next/font/google";
+import Providers from "./providers";
 
-export default function RootLayout({
-  children,
-}) {
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <body className={inter.className}>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

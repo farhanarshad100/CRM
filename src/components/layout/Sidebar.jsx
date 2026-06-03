@@ -81,7 +81,7 @@ export default function Sidebar() {
           position: "sticky",
           top: "65px", // below navbar
           left: 0,
-          height: "100vh",
+          height: "100%",
           background: "#fff",
           border: "none",
           display: "flex",
