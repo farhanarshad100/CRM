@@ -8,8 +8,10 @@ export default function Button({
   return (
     <MuiButton
       sx={{
-        borderRadius: "4px",
+        borderRadius: "8px",
         textTransform: "none",
+         color:"#181C1E",
+         fontSize:"14px",
         ...sx,
       }}
       {...props}
