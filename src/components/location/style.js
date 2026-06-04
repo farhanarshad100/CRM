@@ -1,33 +1,52 @@
 const style = {
-locationTopSection:{
-    display:"flex",
-    justifyContent:"space-between",
-    alignItems:"end"
-},
-locationLeft:{
-    display:"flex",
-    flexDirection:"column",
-    gap:"8px",
-    "& h3":{
-        color:"#181C1E",
-        fontSize:"36px",
-        fontWeight:"800",
-        letterSpacing:"-1.8px"
+  locationTopSection: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "end",
+  },
+  locationLeft: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "8px",
+    "& h3": {
+      color: "#181C1E",
+      fontSize: "36px",
+      fontWeight: "800",
+      letterSpacing: "-1.8px",
     },
-    "h6":{
-        color:"#004CCA",
-        fontSize:"12px",
-        fontWeight:"800",
+    h6: {
+      color: "#004CCA",
+      fontSize: "12px",
+      fontWeight: "800",
     },
-    "& p":{
-        fontSize:"16px",
-        color:"#424656",
-        fontWeight:"400",
-    }
-},
-locationRight:{
-    display:"flex",
-    gap:"12px",
-}
-}
-export default style
+    "& p": {
+      fontSize: "16px",
+      color: "#424656",
+      fontWeight: "400",
+    },
+  },
+  locationRight: {
+    display: "flex",
+    gap: "12px",
+  },
+  cardOffice: {
+    borderRadius: "12px",
+    background: "#fff",
+    padding: "32px",
+  },
+  innerDetails: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  iconBox: {
+    width: "44px",
+    height: "44px",
+    borderRadius: "8px",
+    background: "rgb(180 197 255 / 20%)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+};
+export default style;
