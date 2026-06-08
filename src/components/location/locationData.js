@@ -4,9 +4,10 @@ export const officeLocation =[
         type: "REGISTERED OFFICE",
         subtitle:"OFFICIAL ENTITY",
         title:"Trikuta Business Software Pvt Ltd",
-        address:"E - 47/7, Okhla Industrial Area Phase II, New Delhi : 110020",
-        image:"/images/abc.jpg",
+        address:"E - 47/7, Okhla Industrial Area Phase II,\n New Delhi : 110020",
+        image:"/images/mapimg.jpg",
         icon:"/images/Technology.svg",
+        location:"/images/map.svg",
         footer:"Verified Location",
     },
     {
@@ -14,9 +15,11 @@ export const officeLocation =[
         type:"CORPORATE OFFICE",
         subtitle:"HEADQUARTERS",
         title:"Trikuta Business Software Pvt Ltd",
-        address:"E - 47/7, Okhla Industrial Area Phase II, New Delhi : 110020",
-        image:"/images/corporate-office.jpg",
-        icon:"/images/Technology.svg",
+        address:"E - 47/7, Okhla Industrial Area Phase II,\n New Delhi : 110020",
+        image:"/images/mapimg2.jpg",
+        icon:"/images/bag.svg",
+        location:"/images/map.svg",
         footer:"Primary Workspace",
+    
     }
 ]

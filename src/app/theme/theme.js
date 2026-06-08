@@ -7,6 +7,7 @@ const theme = createTheme({
     h1: {
       fontWeight: 700,
       color:"#0F172A"
+      
     },
     h2: {
       fontWeight: 600,

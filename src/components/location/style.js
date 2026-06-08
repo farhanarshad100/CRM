@@ -1,4 +1,3 @@
-
 // https://crm-red-three-67.vercel.app/office-location
 const style = {
   locationTopSection: {
@@ -49,7 +48,17 @@ const style = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    
   },
+  addressSection:{
+    display:"flex",
+    gap:"16px",
+    margin:"20px 0px 28px 0px",
+    "& p":{
+      color:"#424656",
+      fontSize:"18px",
+      fontWeight:"400",
+      whiteSpace: "pre-line",
+    }
+  }
 };
 export default style;
