@@ -22,10 +22,10 @@ export default function DashboardLayout({ children }) {
     <Box>
       <Navbar />
 
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", }}>
         <Sidebar />
 
-        <Box sx={{ flexGrow: 1, p: 3,  }}>
+        <Box sx={{ flexGrow: 1, p: 3, marginLeft:"260px"  }}>
           {children}
         </Box>
       </Box>

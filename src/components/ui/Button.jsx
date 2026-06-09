@@ -1,7 +1,7 @@
 import MuiButton from "@mui/material/Button";
 
 export default function Button({
-  children,
+children,
   sx = {},
   ...props
 }) {
@@ -11,7 +11,7 @@ export default function Button({
         borderRadius: "8px",
         textTransform: "none",
          color:"#181C1E",
-         fontSize:"14px",
+         fontSize:"16px",
         ...sx,
       }}
       {...props}

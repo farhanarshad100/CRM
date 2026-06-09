@@ -79,7 +79,7 @@ export default function Sidebar() {
       sx={{
         "& .MuiDrawer-paper": {
           width: drawerWidth,
-          position: "sticky",
+          position: "fixed",
           top: "65px", // below navbar
           left: 0,
           height: "100%",

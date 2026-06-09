@@ -7,12 +7,15 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <Box
-      position="static"
+     
       sx={{
         background: "#FFFFFF",
         boxShadow: "1px 1px 1px #e9e9e9",
         minHeight: "64px",
         padding: "11px 20px",
+        position: "sticky",
+        top: "0",
+        zIndex: "99999",
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center" }}>
