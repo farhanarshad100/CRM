@@ -59,6 +59,24 @@ const style = {
       fontWeight:"400",
       whiteSpace: "pre-line",
     }
+  },
+  official:{
+    margin:"0",
+    padding:"0",
+    " & li":{
+      color:"#fff",
+      fontSize:"14px",
+      fontWeight:"400",
+      padding:"0",
+      margin:"0",
+      marginBottom:"12px",
+      "& span":{
+        marginRight:"10px",
+      },
+      "&:last-child":{
+        marginBottom:"0",
+      }
+    }
   }
 };
 export default style;
