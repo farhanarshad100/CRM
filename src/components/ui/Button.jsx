@@ -10,8 +10,9 @@ children,
       sx={{
         borderRadius: "8px",
         textTransform: "none",
-         color:"#181C1E",
+         color:"#fff",
          fontSize:"16px",
+         background:"#004CCA",
         ...sx,
       }}
       {...props}
