@@ -49,5 +49,38 @@ const style = {
     },
 }
     },
+   onboarding:{display: "flex",
+
+justifyContent: "space-between",
+alignItems: "center",
+background: "linear-gradient(135deg, #004CCA 0%, #0062FF 100%)",
+boxShadow: "0px 10px 15px -3px rgba(0, 76, 202, 0.2), 0px 4px 6px -4px rgba(0, 76, 202, 0.2)",
+borderRadius: "12px",
+height:"100%",
+padding:"24px",
+position:"relative",
+"&:after":{
+    content: '""',
+    position: "absolute",
+    right: 0,
+    bottom: 0,
+    width: "120px",
+    height: "120px",
+    backgroundImage: 'url("/images/userplus.svg")',
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+    backgroundPosition: "bottom right",
+}
+},
+menuRow:{
+  "& ul":{
+    padding:"0",
+    "& li":{
+      fontSize:"14px",
+      fontWeight:"600",
+      padding:"10px 20px"
+    }
+  }
+}
 };
 export default style;
