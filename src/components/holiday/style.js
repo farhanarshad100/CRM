@@ -69,6 +69,7 @@ const style = {
     borderRadius: "8px",
     padding: "24px",
   },
+
   status: {
     background: "#F7FAFC",
     border: "1px solid rgba(194, 198, 217, 0.1)",
@@ -96,6 +97,19 @@ const style = {
       color: "#424656",
       fontWeight: "400",
     },
+  },
+    hightlightsCard:{
+    background: "#FFFFFF",
+    border: "1px solid rgba(194, 198, 217, 0.15)",
+    boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.05)",
+    borderRadius: "8px",
+    padding: "24px", 
+    marginTop: "24px",
+    "& h3":{
+      fontSize: "14px",
+      color: "#181C1E",
+      fontWeight: "800",
+    }
   },
 };
 export default style;

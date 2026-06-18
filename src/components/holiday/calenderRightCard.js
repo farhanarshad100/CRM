@@ -3,6 +3,7 @@ import React from 'react'
 import style from './style'
 import Image from 'next/image'
 import Button from '../ui/Button'
+import Link from 'next/link'
 
 const CalenderRightCard = () => {
   return (
@@ -37,6 +38,61 @@ Standard weekend policy
 applies.</Typography>
   </Box>
   <Button sx={{width:"100%", color:"#566475", fontSize:"16px", background:"#D3E1F6"}}>Add Reminder</Button>
+ </Box>
+
+ <Box sx={style.hightlightsCard}>
+    <Typography variant='h3'>April Highlights</Typography>
+    <Box sx={{display:"flex", alignItems:"center", gap:"16px", marginTop:"16px"}}>
+        <Box sx={{background:"#B4C5FF", borderRadius:"8px", display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column", width:"48px", height:"48px"}}>
+            <Typography variant='h4' sx={{fontSize:"12px", color:"#004CCA", fontWeight:"800"}}>03</Typography>
+            <Typography variant='body1' sx={{fontSize:"10px", color:"#004CCA", fontWeight:"800"}}>APR</Typography>
+        </Box>
+        <Box>
+            <Typography variant='h4' sx={{fontSize:"14px", color:"#181C1E", fontWeight:"800"}}>Good Friday</Typography>
+            <Typography variant='body1' sx={{fontSize:"12px", color:"#424656", fontWeight:"400"}}>Mandatory Holiday</Typography>
+        </Box>
+        <Link href="/" style={{marginLeft:"auto"}}>
+         <Image src="/images/rightarrow.svg" alt='holiday'
+                    width={7}
+                    height={12}
+                    />
+        
+        </Link>
+    </Box>
+        <Box sx={{display:"flex", alignItems:"center", gap:"16px", marginTop:"16px"}}>
+        <Box sx={{background:"#B4C5FF", borderRadius:"8px", display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column", width:"48px", height:"48px"}}>
+            <Typography variant='h4' sx={{fontSize:"12px", color:"#004CCA", fontWeight:"800"}}>03</Typography>
+            <Typography variant='body1' sx={{fontSize:"10px", color:"#004CCA", fontWeight:"800"}}>APR</Typography>
+        </Box>
+        <Box>
+            <Typography variant='h4' sx={{fontSize:"14px", color:"#181C1E", fontWeight:"800"}}>Good Friday</Typography>
+            <Typography variant='body1' sx={{fontSize:"12px", color:"#424656", fontWeight:"400"}}>Mandatory Holiday</Typography>
+        </Box>
+        <Link href="/" style={{marginLeft:"auto"}}>
+         <Image src="/images/rightarrow.svg" alt='holiday'
+                    width={7}
+                    height={12}
+                    />
+        
+        </Link>
+    </Box>
+        <Box sx={{display:"flex", alignItems:"center", gap:"16px", marginTop:"16px"}}>
+        <Box sx={{background:"#B4C5FF", borderRadius:"8px", display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column", width:"48px", height:"48px"}}>
+            <Typography variant='h4' sx={{fontSize:"12px", color:"#004CCA", fontWeight:"800"}}>03</Typography>
+            <Typography variant='body1' sx={{fontSize:"10px", color:"#004CCA", fontWeight:"800"}}>APR</Typography>
+        </Box>
+        <Box>
+            <Typography variant='h4' sx={{fontSize:"14px", color:"#181C1E", fontWeight:"800"}}>Good Friday</Typography>
+            <Typography variant='body1' sx={{fontSize:"12px", color:"#424656", fontWeight:"400"}}>Mandatory Holiday</Typography>
+        </Box>
+        <Link href="/" style={{marginLeft:"auto"}}>
+         <Image src="/images/rightarrow.svg" alt='holiday'
+                    width={7}
+                    height={12}
+                    />
+        
+        </Link>
+    </Box>
  </Box>
  </>
   )
