@@ -6,7 +6,7 @@ import Button from '../ui/Button'
 
 const HolidayTop = () => {
   return (
-<Box>
+<Box sx={{marginBottom:"32px"}}>
     <Grid container spacing={3}>
         <Grid size={4}>
             <Box sx={style.holidayCard}>
