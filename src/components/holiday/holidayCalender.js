@@ -100,8 +100,13 @@ export default function HolidayCalendar() {
       (index + 1) % 7 === 0
         ? "none"
         : "1px solid #e5e7eb",
-    borderBottom: "1px solid #e5e7eb",
+    borderBottom: 
+    (index + 1) % 10 === 0
+        ? "none"
+        : "1px solid #e5e7eb",
+  
     bgcolor: holiday ? "#f8fafc" : "#fff",
+  
   }}
 >
               {day && (
