@@ -31,5 +31,32 @@ const style = {
     background: "#fff",
     color: "#004CCA",
   },
+  frontCard:{
+background: "#FFFFFF",
+border: "1px solid #F1F5F9",
+boxShadow: "0px 25px 50px -12px rgba(0, 0, 0, 0.25)",
+borderRadius: "32px",
+borderRadius:"32px",
+overflow:"hidden",
+width:"338px",
+margin:"auto",
+position:"relative",
+  },
+  coverFront:{
+background: "linear-gradient(135deg, #004CCA 0%, #0062FF 100%)",
+padding:"32px"
+  },
+  cardProfile:{
+    position: "relative",
+width: "128px",
+height: "128px",
+background: "#F7FAFC",
+border: "4px solid #FFFFFF",
+borderRadius: "12px",
+bottom:"64px",
+left:"0",
+right:"0",
+margin:"auto"
+  }
 };
 export default style;

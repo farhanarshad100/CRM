@@ -1,8 +1,9 @@
 "use client";
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import React, { useState } from "react";
 import style from "./style";
 import Button from "../ui/Button";
+import CorporateCard from "./corporateCard";
 
 const StationeryTabs = () => {
   const [activeTab, setActiveTab] = useState("idCard");
@@ -16,7 +17,7 @@ const StationeryTabs = () => {
             borderRadius: "12px",
             fontSize: "16px",
             fontWeight: "800",
-            background:"#F1F4F6",
+            background: "#F1F4F6",
             color: "#424656",
             ...(activeTab === "idCard" && style.active),
           }}
@@ -26,11 +27,11 @@ const StationeryTabs = () => {
 
         <Button
           onClick={() => setActiveTab("visitCard")}
-                  sx={{
+          sx={{
             padding: "8px 32px",
             borderRadius: "12px",
             fontSize: "16px",
-            background:"#F1F4F6",
+            background: "#F1F4F6",
             fontWeight: "800",
             color: "#424656",
             ...(activeTab === "visitCard" && style.active),
@@ -39,8 +40,14 @@ const StationeryTabs = () => {
           Visiting Card
         </Button>
       </Box>
-
-      {activeTab === "idCard" && <p>Hello</p>}
+      {activeTab === "idCard" && (
+        <Grid container spacing={3}>
+          <Grid size={6}>
+            <CorporateCard />
+          </Grid>
+          <Grid size={6}>one</Grid>
+        </Grid>
+      )}
       {activeTab === "visitCard" && <p>yahooo</p>}
     </>
   );
