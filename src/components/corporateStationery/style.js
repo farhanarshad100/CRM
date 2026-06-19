@@ -2,6 +2,7 @@ const style = {
     corporateStationery:{
         display:"flex",
         justifyContent:"space-between",
+        alignItems:"flex-end",
     },
     innerDetails:{
         "& h4":{
