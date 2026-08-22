@@ -18,44 +18,53 @@ const menuItems = [
   {
     label: "Dashboard",
     href: "/dashboard",
-    icon: "/images/dashboardicon.svg",
+    icon: "/images/dashboardiconinactive.svg",
+    activeIcon: "/images/dashboardicon.svg",
 
   },
   {
     label: "Attendance",
     href: "/attendance",
     icon: "/images/attendanceicon.svg",
+    activeIcon: "/images/attendanceiconactive.svg",
 
   },
   {
     label: "Leave",
-    href: "/leave",
+    href: "/holiday",
     icon: "/images/leaveIcon.svg",
+    activeIcon: "/images/leaveiconactive.svg",
+    
   },
   {
     label: "Payroll",
     href: "/payroll",
-    icon: "/images/payrollIcon.svg"
+    icon: "/images/payrollIcon.svg",
+    activeIcon:"/images/payrolliconactive.svg"
   },
   {
     label: "Directory",
     href: "/directory",
-    icon: "/images/directoryIcon.svg"
+    icon: "/images/directoryIcon.svg",
+    activeIcon:"/images/directoryIconactive.svg"
   },
   {
     label: "ID Card",
     href: "/id-card",
     icon: "/images/idcardicon.svg",
+    activeIcon: "/images/idcardiconactive"
   },
   {
     label: "Holidays",
     href: "/holidays",
     icon: "/images/holidayicon.svg",
+    activeIcon: "/images/holidayiconactive.svg"
   },
   {
     label: "Organization",
     href: "/organization",
     icon: "/images/charticon.svg",
+    activeIcon:"/images/charticonactive.svg"
   },
 ];
 
@@ -92,28 +101,37 @@ export default function Sidebar() {
       }}
     >
       <Box sx={style.sideNav}>
-        <List sx={{ width: "100%", pt: 0 }}>
-          {menuItems.map((item) => (
-            <ListItem
-              key={item.href}
-              disablePadding
-              className={pathname === item.href ? "active" : ""}
-            >
+   <List sx={{ width: "100%", pt: 0 }}>
+  {menuItems.map((item) => {
+    const isActive =
+      pathname === item.href ||
+      pathname.startsWith(`${item.href}/`);
 
-              <ListItemButton component={Link} href={item.href}>
-                <Image
-                  src={item.icon}
-                  alt={item.label}
-                  width={18}
-                  height={18}
-                />
-                <ListItemText primary={item.label} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
+    return (
+      <ListItem
+        key={item.href}
+        disablePadding
+        className={isActive ? "active" : ""}
+      >
+        <ListItemButton component={Link} href={item.href}>
+          <Image
+            src={isActive ? item.activeIcon : item.icon}
+            alt={item.label}
+            width={18}
+            height={18}
+          />
+
+          <ListItemText primary={item.label} />
+        </ListItemButton>
+      </ListItem>
+    );
+  })}
+</List>
 
       </Box>
+
+{/*Setting Section */}
+      
       <Box sx={style.sideNav} style={{ marginBottom: "75px" }}>
         <List sx={{ width: "100%", pt: 0 }}>
           {menuItemsBottom.map((item) => (

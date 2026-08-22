@@ -13,6 +13,8 @@ const style = {
     background: "rgb(0 76 202 / 10%)",
     padding: "12px",
     borderRadius: "8px",
+    width:"46px",
+    textAlign:"center"
   },
   holiDetails: {
     "& p": {
