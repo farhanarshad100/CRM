@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import style from "./style";
 import Button from "../ui/Button";
 import CorporateCard from "./corporateCard";
+import CorporateCard2 from "./corporateCard2";
 
 const StationeryTabs = () => {
   const [activeTab, setActiveTab] = useState("idCard");
@@ -45,7 +46,7 @@ const StationeryTabs = () => {
           <Grid size={6}>
             <CorporateCard />
           </Grid>
-          <Grid size={6}>one</Grid>
+          <Grid size={6}> <CorporateCard2 /></Grid>
         </Grid>
       )}
       {activeTab === "visitCard" && <p>yahooo</p>}
