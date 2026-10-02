@@ -7,7 +7,7 @@ const CorporateCard = () => {
   return (
 <>
 <Box sx={style.frontCardDetails}>
-  <span></span>
+  <span style={{background:"#004cca"}}></span>
   <Typography variant="body1" sx={{fontSize:"12px", color:"#424656", fontWeight:"bold"}}>FRONT VIEW</Typography>
 </Box>
 
@@ -38,7 +38,14 @@ const CorporateCard = () => {
         <ListItem>DEPARTMENT<span>Core Infrastructure</span></ListItem>
         <ListItem>JOINING DATE <span>12 Feb 2022</span></ListItem>
       </List>
-
+      <Box sx={style.bar}>
+        <Image
+                            src="/images/bar.png"
+                            alt="Export"
+                            width={55}
+                            height={35}
+                          />
+      </Box>
       </Box>
     </Box>
     </>

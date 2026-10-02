@@ -123,7 +123,84 @@ frontCardDetails:{
     height:"8px",
     borderRadius:"100px"
   }
-}
+},
+frontCard2:{
+  background:"#fff"
+},
+  coverBack:{
+padding:"32px",
+  borderBottom: "10px solid transparent",
+        borderImage: "linear-gradient(90deg, #004CCA 0%, #0062FF 50%, #004CCA 100%) 1",
+
+"& h3":{
+  fontSize:"12px",
+  fontWeight:"900",
+  color:"#004CCA",
+},
+  },
+  innerBox:{
+    display:"flex",
+    gap:"15px",
+marginTop:"10px",
+    justifyContent:"space-between",
+ 
+  
+  },
+  backsideInner:{
+    background:"#F1F4F6",
+    padding:"12px",
+    borderRadius:"8px",
+    width:"100%",
+    "& h5":{
+      fontSize:"12px",
+      color:"#424656",
+     fontWeight:"600",
+      marginBottom:"4px"
+    },
+    "& h3":{
+      color:"#181C1E",
+      fontSize:"18px",
+      fontWeight:"800"
+    }
+  },
+  backsideInner2:{
+    background:"#FFDAD6",
+        "& h5":{
+          color:"#BA1A1A",
+             fontSize:"12px",
+                   fontWeight:"600",
+        },
+        "& h3":{
+           color:"#BA1A1A",
+             fontSize:"18px",
+      fontWeight:"800"
+        }
+  },
+  officeAddress:{
+    paddingTop:"32px",
+      
+    "& h6":{
+      marginBottom:"16px",
+      color:"#004CCA",
+      fontSize:"12px"
+    },
+    "& p":{
+      color:"#181C1E",
+      fontSize:"10px",
+      fontWeight:"600"
+    }
+  },
+  officeAddressInner:{
+    display:"flex",
+    justifyContent:"space-between",
+      paddingBottom:"22px"
+  },
+  bar:{
+    padding:"15px 0 0 0",
+    "& img":{
+      filter: "invert(1)",
+    }
+  },
 
 };
 

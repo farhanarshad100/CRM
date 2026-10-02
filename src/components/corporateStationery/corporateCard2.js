@@ -11,35 +11,59 @@ const CorporateCard2 = () => {
   <Typography variant="body1" sx={{fontSize:"12px", color:"#424656", fontWeight:"bold"}}>BACK VIEW</Typography>
 </Box>
 
-    <Box sx={style.frontCard}>
-      <Box sx={style.coverFront}>
-        <Typography variant="body1">KNOWBUILD</Typography>
-        <Typography variant="h3">PRECISION CORP</Typography>
-        <Box sx={style.cardProfile}>
-                   <Image
-                          src="/images/profile.jpg"
-                          alt="Search"
-                          width={120}
-                          height={120}
-                          priority
-                          style={{ display: "block" }}
-                        />
+    <Box sx={{...style.frontCard, ...style.frontCard2}}>
+      <Box sx={style.coverBack}>
+        <Typography variant="h3">SAFETY INFORMATION</Typography>
+   <Box sx={style.innerBox}>
+    <Box sx={style.backsideInner}>
+      <Typography variant="h5">BLOOD GROUP</Typography>
+      <Typography variant="h3">O+</Typography>
+    </Box>
+
+     <Box sx={{...style.backsideInner, ...style.backsideInner2}} >
+      <Typography variant="h5">EMERGENCY NO</Typography>
+      <Typography variant="h3">+91 89604
+62360</Typography>
+    </Box>
+
+   </Box>
+       <Box sx={style.officeAddress}>
+      <Typography variant="h6">OFFICE ADDRESS</Typography>
+      <Typography variant="body1">knowbuild Business Software Pvt Ltd
+B28, Phase 1, Okhla Industrial Estate,
+New Delhi, India - 110020</Typography>
+    </Box>
+    <Box sx={style.officeAddress}>
+            <Typography variant="h6">TERMS OF USE</Typography>
+      <Typography variant="body1" style={{color:"#424656", fontWeight:"normal"}}>This identity card is property of knowbuild Business Software
+Pvt Ltd. If found, please return to the office mentioned above.
+Use of this card is governed by the company's internal security
+policies.</Typography>
+    </Box>
+
+    <Box sx={style.officeAddress}>
+      <Box sx={style.officeAddressInner}>
+        <Box sx={style.author}>
+          <Typography variant="body1">AUTHORIZED SIGNATORY</Typography>
+          <span>        <Image
+                    src="/images/Signature.png"
+                    alt="Export"
+                    width={32}
+                    height={32}
+                  /></span>
         </Box>
+          <span>        <Image
+                    src="/images/Qr.jpg"
+                    alt="Export"
+                    width={64}
+                    height={64}
+                  /></span>
+      </Box>
+    </Box>
       </Box>
       
-      <Box sx={style.boxInnerPart}>
-      <Typography variant="h4">Mohd Ansari</Typography>
-      <Typography variant="body1">Senior Backend Engineer</Typography>
+      
 
-      <Box sx={style.lineHr}></Box>
-
-      <List sx={style.profileList}>
-        <ListItem>EMP ID <span>ID: 016</span></ListItem>
-        <ListItem>DEPARTMENT<span>Core Infrastructure</span></ListItem>
-        <ListItem>JOINING DATE <span>12 Feb 2022</span></ListItem>
-      </List>
-
-      </Box>
     </Box>
     </>
   );
