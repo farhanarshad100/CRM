@@ -1,0 +1,8 @@
+http://localhost:3000/
+http://localhost:3000/dashboard
+http://localhost:3000/attendance
+http://localhost:3000/holiday
+http://localhost:3000/office-location
+http://localhost:3000/employee-directory
+http://localhost:3000/company-profile
+http://localhost:3000/company-policies
