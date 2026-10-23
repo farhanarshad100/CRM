@@ -14,7 +14,7 @@ const style = {
       fontWeight: "800",
       marginBottom: "8px",
     },
-    "& p:": {
+    "& p":{
       color: "#424656",
       fontSize: "16px",
       fontWeight: "400",
@@ -201,6 +201,151 @@ marginTop:"10px",
       filter: "invert(1)",
     }
   },
+  businessHeading:{
+    padding:"60px 0",
+    "& h2":{
+      fontSize:"24px",
+      color:"#181C1E",
+      fontWeight:"800",
+      marginBottom:"32px",
+    }
+  },
+  innerDetailsBusiness:{
+    padding:"48px",
+    display:"flex",
+    gap:"48px",
+    background:"#fff",
+    border:"1px solid #F1F5F9",
+    borderRadius:"40px",
+    alignItems:"center",
+  },
+  innerCard:{
+    padding:"32px",
+    width:"100%",
+    background: "#FFFFFF",
+border: "1px solid #F1F5F9",
+boxShadow: "0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1)",
+borderRadius: "16px",
+position:"relative",
+overflow:"hidden",
+  "&::before": {
+    content: '""',
+  position: "absolute",
+width: "128px",
+height: "128px",
+right: "-63px",
+top: "-63px",
+background: "rgba(0, 76, 202, 0.05)",
+borderRadius: "12px",
+},
+
+  },
+  cardCompnayName:{
+    "& h1":{
+  fontSize:"24px",
+  color:"#181C1E",
+  fontWeight:"bold",
+},
+"& p":{
+  color:"#004CCA",
+  fontSize:"12px",
+  letterSpacing:"3px",
+  fontWeight:"600",
+}
+  },
+  cardOnName:{
+    display:"flex",
+    justifyContent:"space-between",
+    marginTop:"10px",
+  },
+  nameInnerDetails:{
+    "& h3":{
+      color:"#181C1E",
+      fontWeight:"bold",
+      fontSize:"20px",
+ 
+    },
+         "& p":{
+        color:"#424656",
+        fontSize:"12px",
+        fontWeight:"600",
+    
+      },
+      "& ul":{
+        margin:"0",
+        padding:"0",
+        "& li":{
+          display:"block",
+          marginBottom:"4px",
+        padding:"0",
+        color:"#424656",
+        fontSize:"12px",
+        "& span":{
+          marginLeft:"8px"
+        }
+        }
+      }
+     
+  },
+  companyCardFront:{
+    background:"#004CCA",
+    padding:"63px 32px",
+    width:"100%",
+    position:"relative",
+    borderRadius:"16px",
+    "& img":{
+      opacity:"0.1",
+      display:"block",
+      margin:"auto",
+    }
+  },
+  brandName:{
+      position: "absolute",
+    textAlign: "center",
+    left: "0",
+    right: "0",
+    color: "#fff",
+    transform: "translateY(-50%)",
+    top: "50%",
+"& h4":{
+  fontSize:"30px",
+  fontWeight:"bold",
+  letterSpacing:"-1.5px",
+  marginBottom:"8px",
+},
+"& p":{
+  letterSpacing:"4.8px",
+  fontSize:"12px",
+  color:"4.8px",
+  opacity:"0.7"
+}
+  },
+  website:{
+    position:"relative",
+    "&::after":{
+      content: '""',
+      width:"80%",
+      height:"1px",
+      background:"#fff",
+      position:"absolute",
+      left:"0",
+      margin:"auto",
+      right:"0",
+        opacity:"0.4"
+    },
+    "& p":{
+          textAlign: "center",
+    background: "#004cca",
+    width: "fit-content",
+    margin: "auto",
+    padding: "0 24px",
+    marginBottom: "-10px",
+    position: "relative",
+    zIndex: "9",
+    color: "#fff",
+    letterSpacing:"1px"
+    }
+  }
 
 };
 
