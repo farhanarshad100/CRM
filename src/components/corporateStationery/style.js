@@ -345,6 +345,38 @@ borderRadius: "12px",
     color: "#fff",
     letterSpacing:"1px"
     }
+  },
+
+
+  updateInfoCard:{
+padding: "24px",
+background: "#FFFFFF",
+border: "1px solid #F1F5F9",
+borderRadius: "16px",
+  },
+  iconBox:{
+    background:"#EFF6FF",
+    borderRadius:"8px",
+    width:"40px",
+    height:"40px",
+    display:"flex",
+    alignItems:"center",
+    justifyContent:"center"
+
+  },
+  updateInnderDetails:{
+    marginTop:"12px",
+
+    "& h2":{
+      fontSize:"16px",
+      color:"#181C1E",
+      fontWeight:"800",
+    },
+    "& p":{
+      color:"#424656",
+      fontSize:"12px",
+      fontWeight:"400",
+    }
   }
 
 };
