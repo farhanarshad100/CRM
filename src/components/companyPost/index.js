@@ -1,13 +1,17 @@
 import React from "react";
-import UserProfile from "./userProfile";
+import UserProfile from "./userProfile/UserProfile";
 import { Grid } from "@mui/material";
+import FeedFilter from "./userProfile/FeedFilter";
 const CompanyPost = () =>{
 return(
     <>
     <Grid container spacing={2}>
-<Grid size={2.5}><UserProfile/></Grid>
-<Grid size={7}><UserProfile/></Grid>
-<Grid size={2.5}><UserProfile/></Grid>
+<Grid size={2.2}>
+    <UserProfile/>
+    <FeedFilter/>
+    </Grid>
+<Grid size={7.6}><UserProfile/></Grid>
+<Grid size={2.2}><UserProfile/></Grid>
     </Grid>
 
     </>

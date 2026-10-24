@@ -27,8 +27,8 @@ style={{ display: "block" }}
         <p>POSTS</p>
     </Box>
     <Box sx={style.postLikeInner}>
-        <h5>24</h5>
-        <p>POSTS</p>
+        <h5>1.2k</h5>
+        <p>REACH</p>
     </Box>
 </Box>
 </Box>
