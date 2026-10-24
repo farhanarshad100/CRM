@@ -12,15 +12,15 @@ const cardDetails =[
     },
     {
         id:2,
-        icon:"/images/updateinfo.svg",
-        title:"Update info 2",
-        description:"description2"
+        icon:"/images/updateinfo2.svg",
+        title:"Report Loss",
+        description:"Immediately deactivate and request a new security ID card."
     },
     {
         id:3,
-        icon:"/images/updateinfo.svg",
-        title:"Update info 3",
-        description:"description 3"
+        icon:"/images/updateinfo3.svg",
+        title:"Custom Brand",
+        description:"Access letterheads and digital brand assets."
     }
 ]
 const UpdateInfoCard = () =>{
@@ -28,25 +28,23 @@ const UpdateInfoCard = () =>{
         <>
         <Grid container spacing={2}>
 
-
-{cardDetails.map((iteam) =>(
-<p>Price</p>
-))}
-            <Grid size={4}>
+            {cardDetails.map((listIteam)=>(
+                      <Grid size={4} key={listIteam.id}>
                 <Box sx={style.updateInfoCard}>
                     <Box sx={style.iconBox}>
-                        <Image src="/images/updateinfo.svg" alt="updateinfo" 
+                        <Image src={listIteam.icon} alt="updateinfo" 
                         width={18}
                         height={16}
                         />
                     </Box>
                           <Box sx={style.updateInnderDetails}>
-                            <h2>Update Info</h2>
-                            <Typography variant="body1">Request changes to your designation or
-personal details.</Typography>
+                            <h2>{listIteam.title}</h2>
+                            <Typography variant="body1">{listIteam.description}</Typography>
 </Box>
 </Box>
             </Grid>
+            ))}
+  
         </Grid>
 
         </>
