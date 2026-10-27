@@ -68,6 +68,10 @@ postLikeInner:{
         fontSize:"12px",
         letterSpacing:"1px",
     }
-}
+},
+iconSection:{
+minWidth:"20px"
+},
+
 }
 export default style
