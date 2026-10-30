@@ -18,9 +18,9 @@ const FeedFilter = () => {
 
   const menuItems = [
     { id: 1, title: "All Feed", icon: "/images/allfeed.svg" },
-    { id: 2, title: "Announcements", icon: "/images/add.svg" },
-    { id: 3, title: "Events", icon: "/images/add.svg" },
-    { id: 4, title: "Teams", icon: "/images/add.svg" },
+    { id: 2, title: "Announcements", icon: "/images/announcement.svg" },
+    { id: 3, title: "Events", icon: "/images/event.svg" },
+    { id: 4, title: "Teams", icon: "/images/team.svg" },
   ];
     const [active, setActive] = useState(menuItems[0]?.id);
 
@@ -36,8 +36,9 @@ const FeedFilter = () => {
             sx={{
               borderRadius: "8px",
               "&.Mui-selected": {
-                backgroundColor: "#e3f2fd",
-                color: "#1976d2",
+                backgroundColor: "#DBE1FF",
+                color: "#004CCA",
+                fontWeight:"800",
               },
               "&.Mui-selected:hover": {
                 backgroundColor: "#bbdefb",
@@ -45,9 +46,9 @@ const FeedFilter = () => {
             }}
           >
                   <ListItemIcon sx={style.iconSection}>
-            <Image src={items.icon} width={15} height={15}   alt={items.title}/>
+            <Image src={items.icon} width={16} height={16}   alt={items.title}/>
         </ListItemIcon>
-            <ListItemText primary={items.title} />
+            <ListItemText primary={items.title} slotProps={{primary:{sx:{fontWeight: active === items.id ? "800" : "500", fontSize:"14px"}}}} />
 
           </ListItemButton>
         ))}

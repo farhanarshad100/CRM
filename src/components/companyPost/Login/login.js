@@ -5,70 +5,36 @@ import { Box } from "@mui/material";
 import react, { useState } from "react";
 const Login = () => {
 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-const [message, setMessage] = useState ("");
-
-const handleLogin = async (e) => {
-    e.preventDefault();
-    setMessage("loading...");
-
-    try {
-      const response = await fetch(
-        "https://dummyjson.com/auth/login",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            username: username,
-            password: password,
-          }),
-        }
-      );
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || "Login failed");
-      }
-
-      setMessage("Login successful!");
-      console.log("User:", data);
-      console.log("Access Token:", data.accessToken);
-
-    } catch (error) {
-      setMessage(error.message);
-    }
-  };
+const [email, setEmail] = useState("");
+const [password, setPassword]= useState ("");
 
 
 
+const handleLogin = (e) =>{
+e.preventDefault();
+console.log("Email", email);
+console.log("Password", password)
 
+};
 
 
   return (
     <>
       <h1 style={{ marginBottom: "30px" }}>Login</h1>
 <form onSubmit={handleLogin}>
-  <input
-    type="text"
-    placeholder="Enter username"
-    value={username}
-    onChange={(e) => setUsername(e.target.value)}
-    required
+<Box sx={{marginBottom:"20px"}}>
+  <label style={{display:"block", marginBottom:"10px"}}>Please enter your email Id</label>
+  <input type="email" value={email} placeholder="Email" style={{border:"1px solid #000", padding:"10px"}}
+  onChange={(e) =>setEmail(e.target.value)}
   />
+</Box>
 
-  <input
-    type="password"
-    placeholder="Enter password"
-    value={password}
-    onChange={(e) => setPassword(e.target.value)}
-    required
-  />
+<Box>
+  <label style={{display:"block", marginBottom:"10px"}}>Please enter your email Id</label>
+  <input onChange={(e) => setPassword(e.target.value)} type="password" value={password} placeholder="Email" style={{border:"1px solid #000", padding:"10px"}} />
+</Box>
 
-  <button type="submit">Login</button>
+    <button type="submit">Login</button>
 </form>
     </>
   );
